@@ -44,6 +44,7 @@ class jerakia (
   $install_package           = $::jerakia::params::install_package,
   $config_dir                = $::jerakia::params::config_dir,
   $config_replace            = $::jerakia::params::config_replace,
+  $config_mode               = $::jerakia::params::config_mode,
   $policy_dir                = $::jerakia::params::policy_dir,
   $manage_config_dir         = $::jerakia::params::manage_config_dir,
   $manage_plugin_dir         = $::jerakia::params::manage_plugin_dir,
@@ -60,6 +61,7 @@ class jerakia (
   $enable_schemas            = undef,
   $schema_opts               = {},
   $plugin_opts               = {},
+  $encryption_opts           = {},
   ) inherits jerakia::params {
 
   class { '::jerakia::package': } ->

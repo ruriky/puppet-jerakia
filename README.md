@@ -53,6 +53,7 @@ The `jerakia` class supports the following optional parameters
 * `install_package`: If set to false, don't manage the package (default: true)
 * `config_dir`: Location of the configuration directory
 * `config_replace`: If set to false, will not overwrite the config after creation
+* `config_mode`: Config file mode (default: 0600)
 * `policy_dir`: Location of the policy directory
 * `manage_config_dir`: Create/manage the config dir (default: true)
 * `manage_plugin_dir`: Create/manage the plugin dir (default: true)
@@ -69,6 +70,7 @@ The `jerakia` class supports the following optional parameters
 * `enable_schemas`: Enable or disable schemas by setting true or false
 * `schema_opts`: A hash containing schema override options
 * `plugin_opts`: A hash of options to be passed to plugins
+* `encryption_opts`: A hash of options for encryption
 
 ### Examples:
 

@@ -42,9 +42,6 @@ class jerakia::config {
     ensure  => file,
     content => template('jerakia/jerakia.yaml.erb'),
     replace => $::jerakia::config_replace,
+    mode    => $::jerakia::config_mode,
   }
-
-
-
 }
-

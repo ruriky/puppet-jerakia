@@ -12,6 +12,7 @@ class jerakia::params  {
 
   $config_dir       = '/etc/jerakia'
   $config_replace   = true
+  $config_mode      = '0600'
   $plugin_dir       = "${config_dir}/lib"
   $policy_dir       = "${config_dir}/policy.d"
   $logfile          = '/var/log/jerakia/jerakia.log'
@@ -29,7 +30,5 @@ class jerakia::params  {
   $logfile_owner = 'puppet'
   $logfile_group = 'puppet'
   $logfile_mode  = '0644'
-
-
 
 }
